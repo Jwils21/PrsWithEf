@@ -51,6 +51,14 @@
     <Compile Include="Migrations\201806111936296_Added Product table.Designer.cs">
       <DependentUpon>201806111936296_Added Product table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806121332075_Added purchase request.cs" />
+    <Compile Include="Migrations\201806121332075_Added purchase request.Designer.cs">
+      <DependentUpon>201806121332075_Added purchase request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806121414268_Added Purchase Request Line Item.cs" />
+    <Compile Include="Migrations\201806121414268_Added Purchase Request Line Item.Designer.cs">
+      <DependentUpon>201806121414268_Added Purchase Request Line Item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Migrations\201806111436592_Initialization.cs" />
     <Compile Include="Migrations\201806111436592_Initialization.Designer.cs">
@@ -72,7 +80,10 @@
     <Compile Include="PrsDbContext.cs" />
     <Compile Include="PrsEntityFramework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseRequest.cs" />
+    <Compile Include="PurchaseRequestLineItem.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UsersController.cs" />
     <Compile Include="Vendor.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806111936296_Added Product table.resx">
       <DependentUpon>201806111936296_Added Product table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806121332075_Added purchase request.resx">
+      <DependentUpon>201806121332075_Added purchase request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806121414268_Added Purchase Request Line Item.resx">
+      <DependentUpon>201806121414268_Added Purchase Request Line Item.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
